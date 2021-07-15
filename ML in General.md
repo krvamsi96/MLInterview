@@ -1,7 +1,7 @@
-# Table of Contents
-* [Types of Artificial Intelligence Learning Models](#aimodels)
-  * [Knowledge-Based Classification](#kbc)
-  * [Feedback-Based Classification](#fbc)
+# Table of Contents                           
+* [Types of Artificial Intelligence Learning Models](#aimodels)        
+* [Knowledge-Based Classification](#kbc)
+* [Feedback-Based Classification](#fbc)
 * [Data Mining Vs Machine Learning](#mlvsdm)
 * [Workflow of Machine Learning Project](#workflow)
 * [Parametric vs Nonparametric](#tric)
