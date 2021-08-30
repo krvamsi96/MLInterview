@@ -168,6 +168,38 @@ Outliers are extreme values that deviate from other observations on data , they 
  * **Scatter Plot**: A scatter plot is useful to find outliers in bivariate data (data with two variables). You can easily spot the outliers because they will be far away from the majority of points on the scatter plot.
  * **Box Plots**
  * incomplete
+
+
+ * **Isolation Forest**
+
+This is a non-parametric method for large datasets in a one or multi dimensional feature space.
+
+An important concept in this method is the isolation number.
+
+The isolation number is the number of splits needed to isolate a data point. This number of splits is ascertained by following these steps:
+
+A point “a” to isolate is selected randomly.
+A random data point “b” is selected that is between the minimum and maximum value and different from “a”.
+If the value of “b” is lower than the value of “a”, the value of “b” becomes the new lower limit.
+If the value of “b” is greater than the value of “a”, the value of “b” becomes the new upper limit.
+This procedure is repeated as long as there are data points other than “a” between the upper and the lower limit.
+It requires fewer splits to isolate an outlier than it does to isolate a non-outlier, i.e. an outlier has a lower isolation number in comparison to a non-outlier point. A data point is therefore defined as an outlier if its isolation number is lower than the threshold.
+
+The threshold is defined based on the estimated percentage of outliers in the data, which is the starting point of this outlier detection algorithm.
+
+An explanation with images of the isolation forest technique is available at https://quantdare.com/isolation-forest-algorithm/.
+
+This technique was implemented in the KNIME workflow in Figure 1 by using a few lines of Python code within a Python Script node.
+
+from sklearn.ensemble import IsolationForest
+import pandas as pd
+
+clf = IsolationForest(max_samples=100, random_state=42)
+table = pd.concat([input_table['Mean(ArrDelay)']], axis=1)
+clf.fit(table)
+output_table = pd.DataFrame(clf.predict(table))
+
+
 ## Cross Entropy or Log Loss  <a name="a"> </br>
 
 Cross-entropy is commonly used to quantify the difference between two probability distributions.</br>
