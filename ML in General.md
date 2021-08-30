@@ -155,7 +155,11 @@ Before jumping to the methods of data imputation, we have to understand the reas
 * Over sampling of the minority class or Under sampling of the majority class.
 * SMOTE (Synthetic Minority Over-sampling Technique.)
 * Anomaly Detection
-
+*  **Undersampling**
+Undersampling resamples the majority class points in the data to make them equal to the minority class points. We will be creating a new dataset out of the original dataset using undersampling
+* **Oversampling**
+Oversampling refers to the resampling of the minority class points to equal the total number of majority points. Repetition of the minority class points is one such type of oversampling technique.
+Apart from repetition, we can provide the class weights to both the class. Providing the large weights to the minority class will give the same result as from that of repetition.
 ![](https://github.com/theainerd/MLInterview/blob/master/images/Screenshot%20from%202018-09-21%2009-20-55.png)
 
 ## how do you detect outliers? <a name="out"></br>
