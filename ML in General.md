@@ -15,6 +15,7 @@
 * [Outliers](#out)
 * [Cross Entropy or Log Loss](#a)
 * [Explain Bias-Variance Tradeoff](#b)
+* [What is Data Wrangling?](#c)
 
 ## Types of Artificial Intelligence Learning Models  <a name="aimodels"> </br>
 
@@ -223,3 +224,8 @@ Log Loss uses negative log to provide an easy metric for comparison. It takes th
 The **bias–variance trade-off** is the conflict in trying to simultaneously minimize these two sources of error that prevent supervised learning algorithms from generalizing beyond their training set.
 
 ![](https://cdn-images-1.medium.com/max/1600/1*9hPX9pAO3jqLrzt0IE3JzA.png)
+
+## What is Data Wrangling? <a name="c"> </br>
+Data wrangling is the process of cleaning and unifying messy and complex data sets for easy access and analysis.
+
+With the amount of data and data sources rapidly growing and expanding, it is getting increasingly essential for large amounts of available data to be organized for analysis. This process typically includes manually converting and mapping data from one raw form into another format to allow for more convenient consumption and organization of the data.
