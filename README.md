@@ -34,7 +34,7 @@ Overfitting is the most common issue which occurs in deep learning. It usually o
 ## What is Backpropagation?  <a name="e"></br>
 Backpropagation is a training algorithm which is used for multilayer neural networks. It transfers the error information from the end of the network to all the weights inside the network. It allows the efficient computation of the gradient.
 
-Backpropagation can be divided into the following steps:
+
 It can forward propagation of training data through the network to generate output.
 It uses target value and output value to compute error derivative concerning output activations.
 It can backpropagate to compute the derivative of the error concerning output activations in the previous layer and continue for all hidden layers.
