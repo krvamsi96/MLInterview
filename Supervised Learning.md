@@ -3,6 +3,7 @@
 # Table of Contents
 * [Supervised Learning](#supervisedlearning)
 * [Linear Regression](#linearregression)
+* https://www.kaggle.com/shrutimechlearn/step-by-step-assumptions-linear-regression
 * [Logistic Regression](#lr)
 * [Multiclass Vs MultiLabel Classification](#mcml)
 * [K Nearest Neighbors](#knn)
