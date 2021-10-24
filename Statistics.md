@@ -30,10 +30,7 @@ Notice that most of these fall into one of two categories: they capture either t
 
 # Important Distributions <a name="a"></br>
  
-**Gaussian/Normal** : We say x ∼ N (µ, σ2) to mean that x is drawn from a Gaussian (or Normal) distribution with mean µ and
-variance σ2 (or equivalently standard deviation σ). We’ll often use the standard normal distribution, or N (0, 1) (i.e., mean 0 and variance 1).
-
-  * The probability of getting a value within 1 standard deviation of the mean is about 68%. For 2 standard deviations, it’s about 95%, and for 3 standard deviations it’s about 99%. This is sometimes called the **“68-95-99 rule”**.
+**Gaussian/Normal** : The normal distribution is a continuous probability distribution that is symmetrical around its mean, most of the observations cluster around the central peak, and the probabilities for values further away from the mean taper off equally in both directions
   
 **Bernoulli** :<a name="b"></br> A Bernoulli random variable can be thought of as the outcome of flipping a biased coin, where the probability of heads is p. To be more precise, a Bernoulli random variable takes on value 1 with probability p and value 0 with probability 1−p. Its expectation is p, and its variance is p(1 − p).
 
@@ -70,13 +67,18 @@ A statistical way of comparing two (or more) techniques, typically an incumbent 
 
 ## Correlation <a name="i"></br>
 
-Correlation is a statistical measure that describes the association between random variables.
+Correlation is the statistical measure of the relationship between two variables.The correlation coefficient, or Pearson's, is calculated using a least-squares measure of the error between an estimating line and the actual data values, normalized by the square root of their variances.
 
 Types of Correlation
 
 * Pearson Correlation Coefficient (measures the linear association between continuous variables)
 * Spearman's Correlation (special case of Pearson ρ applied to ranked (sorted) variables. appropriate to use with both continuous and discrete data.) 
 * Kendall's Tau (more appropriate for discrete data.)
+
+## What is Multicollinearity?
+   Multicollinearity occurs when two or more independent variables(also known as predictor) are highly correlated with one another in a regression model.
+
+
 
 ## Statistical Hypothesis Tests :star::star: <a name="j"></br>
 
