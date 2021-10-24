@@ -241,6 +241,11 @@ Boosting builds on weak learners, and in an iterative fashion. In each iteration
      Suppose you build a model that classified 100 tumors as malignant (the positive class) or benign (the negative class):
      ![](https://github.com/theainerd/MLInterview/blob/master/images/Screenshot%20from%202018-07-09%2009-40-16.png)
      
+   - **F1-Score**</br>
+     F1 Score = 2*(Recall * Precision) / (Recall + Precision)
+
+  
+     
   - **Recall or Sensitivity or True Positive Rate**</br>
     ![](https://github.com/theainerd/MLInterview/blob/master/images/Precisionrecall.svg.png)
     
