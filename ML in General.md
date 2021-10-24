@@ -92,11 +92,55 @@ Cross Validation is a technique to evaluate predictive models by partitioning th
 
 With this in mind, there are two major approaches, outlined in Figure, above: the **sliding window** approach and the **expanding window** approach. In the sliding window approach, one uses a fixed size window, shown here in black, for training. Subsequently, the method is tested against the data shown in orange.
 
-## What is overfitting? <a name="of"></br>
+## What is overfitting and underfitting? <a name="of"></br>
 
-Overfitting or High Variance is a modeling error which is caused by a hypothesis function that fits the training data too close but does not generalise well to predict new data.
-![](https://github.com/theainerd/MLInterview/blob/master/images/partitions-underfitting-vs-overfitting-regression-via-polynomial-degree.png)
+Overfitting: Good performance on the training data, poor generliazation to other data. 
+Underfitting: Poor performance on the training data and poor generalization to other data
 
+#### How to Prevent Overfitting or Underfitting
+
+**Cross-validation:
+
+Cross-validation is a powerful preventative measure against overfitting.
+Use your initial training data to generate multiple mini train-test splits. Use these splits to tune your model.
+In standard k-fold cross-validation, we partition the data into k subsets, called folds. Then, we iteratively train the algorithm on k-1 folds while using the remaining fold as the test set (called the “holdout fold”).
+Cross-validation allows you to tune hyperparameters with only your original training dataset. This allows you to keep your test dataset as a truly unseen dataset for selecting your final model.
+**Train with more data
+It won’t work every time, but training with more data can help algorithms detect the signal better.
+As the user feeds more training data into the model, it will be unable to overfit all the samples and will be forced to generalize to obtain results.
+Users should continually collect more data as a way of increasing the accuracy of the model.
+However, this method is considered expensive, and, therefore, users should ensure that the data being used is relevant and clean.
+Of course, that is not always the case. If we just add more noisy data, this technique will not help. That is why you should always ensure your data is clean and relevant.
+**Data augmentation
+An alternative to training with more data is data augmentation, which is less expensive compared to the former.
+If you are unable to continually collect more data, you can make the available data sets appear diverse.
+Data augmentation makes a data sample look slightly different every time it is processed by the model. The process makes each data set appear unique to the model and prevents the model from learning the characteristics of the data sets.
+Reduce Complexity or Data Simplification
+Overfitting can occur due to the complexity of a model, such that, even with large volumes of data, the model still manages to overfit the training dataset.
+The data simplification method is used to reduce overfitting by decreasing the complexity of the model to make it simple enough that it does not overfit.
+Some of the actions that can be implemented include pruning a decision tree, reducing the number of parameters in a Neural Networks, and using dropout on a Neural Networks.
+Simplifying the model can also make the model lighter and run faster.
+**Regularization
+Regularization refers to a broad range of techniques for artificially forcing your model to be simpler.
+The method will depend on the type of learner you are using. For example, you could prune a decision tree, use dropout on a neural network, or add a penalty parameter to the cost function in regression.
+Oftentimes, the regularization method is a hyperparameter as well, which means it can be tuned through cross-validation.
+
+**Ensembling
+Ensembles are machine learning methods for combining predictions from multiple separate models. There are a few different methods for ensembling, but the two most common are: Boosting and Bagging.
+Boosting works by using simple base models to increase their aggregate complexity. It trains a large number of weak learners arranged in a sequence, such that each learner in the sequence learns from the mistakes of the learner before it.
+Boosting attempts to improve the predictive flexibility of simple models.
+Boosting combines all the weak learners in the sequence to bring out one strong learner.
+Bagging works by training many strong learners arranged in a parallel pattern and then combining them to optimize their predictions.
+Bagging attempts to reduce the chance of overfitting complex models.
+Bagging then combines all the strong learners together to "smooth out" their predictions.
+Early Stopping
+When you’re training a learning algorithm iteratively, you can measure how well each iteration of the model performs.
+Up until a certain number of iterations, new iterations improve the model. After that point, however, the model’s ability to generalize can weaken as it begins to overfit the **training data.
+Early stopping refers stopping the training process before the learner passes that point.
+Today, this technique is mostly used in deep learning while other techniques (e.g. regularization) are preferred for classical machine learning.
+You need to add regularization in case of Linear and SVM models.
+In decision tree models you can reduce the maximum depth.
+While in Neural Networks, you can introduce dropout layer to reduce overfitting.
 ## What is regularization? <a name="reg"></br>
 
 Regulariztion is a technique to prevent overfitting by penalizing the coefficients of the cost function.
