@@ -7,7 +7,7 @@
 * [Parametric vs Nonparametric](#tric)
 * [Discriminative vs Generative Learning Algorithm](#dam)
 * [Cross Validation](#cv)
-* [Overfitting](#of)
+* [Overfitting and Underfitting](#of)
 * [Regularization](#reg)
 * [Loss Functions for Regression and Classification](#lossfun)
 * [Handle missing or Corrupted data](#missing)
@@ -94,7 +94,8 @@ With this in mind, there are two major approaches, outlined in Figure, above: th
 
 ## What is overfitting and underfitting? <a name="of"></br>
 
-Overfitting: Good performance on the training data, poor generliazation to other data. 
+Overfitting: Good performance on the training data, poor generliazation to other data.
+
 Underfitting: Poor performance on the training data and poor generalization to other data
 
 #### How to Prevent Overfitting or Underfitting
