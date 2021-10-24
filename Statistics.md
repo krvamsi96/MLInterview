@@ -7,7 +7,7 @@
 * [Significance Level](#f)
 * [P-value](#g)
 * [A/B testing](#h)
-* [Correlation](#i)
+* [Correlation &  Multicollinearity?](#i)
 * [Statistical Hypothesis Tests :star::star:](#j)
 
 
