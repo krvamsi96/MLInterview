@@ -242,6 +242,7 @@ Boosting builds on weak learners, and in an iterative fashion. In each iteration
      ![](https://github.com/theainerd/MLInterview/blob/master/images/Screenshot%20from%202018-07-09%2009-40-16.png)
      
    - **F1-Score**</br>
+     F1 score combines precision and recall relative to a specific positive class -The F1 score can be interpreted as a weighted average of the precision and recall, where an F1      score reaches its best value at 1 and worst at 0
      F1 Score = 2*(Recall * Precision) / (Recall + Precision)
 
   
