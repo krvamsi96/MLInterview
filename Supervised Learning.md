@@ -19,7 +19,16 @@ _Supervised learning_ is where you have input data (X) and their corresponding o
 ![](https://github.com/theainerd/MLInterview/blob/master/images/Screenshot%20from%202018-07-03%2019-25-29.png)
 
 ## What is linear regression ? <a name="linearregression"> </br>
-_Linear Regression_ is a parametric, discriminative supervised learning algorithm to predict continuous values of  a target variable by fitting the best linear relationship between the dependent & independent variable.
+Linear Regression is the supervised Machine Learning model in which the model finds the best fit linear line between the independent and dependent variable i.e it finds the linear relationship between the dependent and independent variable.
+
+Linear Regression is of two types: Simple and Multiple. Simple Linear Regression is where only one independent variable is present and the model has to find the linear relationship of it with the dependent variable
+
+Whereas, In Multiple Linear Regression there are more than one independent variables for the model to find the relationship.
+
+**What is linear regression and how does it work?
+Image result for linear regression explained
+Linear Regression is the process of finding a line that best fits the data points available on the plot, so that we can use it to predict output values for inputs that are not present in the data set we have, with the belief that those outputs would fall on the line
+
 ![](https://github.com/theainerd/MLInterview/blob/master/images/maxresdefault.jpg)
 
 ## What is gradient descent ? <a name="gd"></br>
@@ -31,6 +40,17 @@ objective function. It starts with intial set of parameter values and iterativel
 ## What is logistic regression ? <a name="lr"></br>
 _Logistic regression_ is a parametric, discriminative supervised learning algorithm for classification, i.e used where the response variable is categorical by applying a sigmoid function to a linear prediction.
 The idea of logistic regression is to find  a relationship between features and probability of particular outcome.
+In Logistic regression, instead of fitting a regression line, we fit an "S" shaped logistic function, which predicts two maximum values (0 or 1).
+Logistic Regression is a significant machine learning algorithm because it has the ability to provide probabilities and classify new data using continuous and discrete datasets.
+
+**Logistic Regression Assumptions
+In case of binary logistic regression, the target variables must be binary always and the desired outcome is represented by the factor level 1.
+
+There should not be any multi-collinearity in the model, which means the independent variables must be independent of each other.
+
+We must include meaningful variables in our model.
+
+We should choose a large sample size for logistic regression.
 
 ![](https://github.com/theainerd/MLInterview/blob/master/images/20170513_gradient_descent_logistic_animation.gif)
 
@@ -179,14 +199,26 @@ random features. This parameter adds a little randomness - good
 generalised model.
 ![](https://github.com/theainerd/MLInterview/blob/master/images/image5.png)
 ## What is random forest ? </br> <a name="rf">
-Random forest improves bagging further by adding some randomness. In random forest, only a subset of features are selected at random to construct a tree (while often not subsample instances). The benefit is that random forest decorrelates the trees.
-
-For example, suppose we have a dataset. There is one very predicative feature, and a couple of moderately predicative features. In bagging trees, most of the trees will use this very predicative feature in the top split, and therefore making most of the trees look similar, and highly correlated. Averaging many highly correlated results won't lead to a large reduction in variance compared with uncorrelated results. In random forest for each split we only consider a subset of the features and therefore reduce the variance even further by introducing more uncorrelated trees.
+Random Forest: ensemble model made of many decision trees using bootstrapping, random subsets of features, and average voting to make predictions. This is an example of a bagging ensemble.
+  
+It’s more accurate than the decision tree algorithm.
+It provides an effective way of handling missing data.
+It can produce a reasonable prediction without hyper-parameter tuning.
+It solves the issue of overfitting in decision trees.
+In every random forest tree, a subset of features is selected randomly at the node’s splitting point.
 
 **Pros**:
-- As it predicts by aggregating the predictions from smaller
-predictors the variance decreases. Less overfitting.
-- Useful when missing data is huge.
+-It overcomes the problem of overfitting by averaging or combining the results of different decision trees.
+
+Random forests work well for a large range of data items than a single decision tree does.
+
+Random forest has less variance then single decision tree.
+
+Random forests are very flexible and possess very high accuracy.
+
+Scaling of data does not require in random forest algorithm. It maintains good accuracy even after providing data without scaling.
+
+Random Forest algorithms maintains good accuracy even a large proportion of the data is missing.
 
 **Cons**:
 - Better with classification than regression.
