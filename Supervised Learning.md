@@ -319,6 +319,9 @@ Boosting builds on weak learners, and in an iterative fashion. In each iteration
 The **ROC curve** is a graphical representation of the contrast between true positive rates and the false positive rate at various thresholds.</br>
 It’s often used as a proxy for the trade-off between the sensitivity of the model (true positives) vs the fall-out or the probability it will trigger a false alarm (false positives).
 
+#### What is a good ROC curve score?
+Based on a rough classifying system, AUC can be interpreted as follows: 90 -100 = excellent; 80 - 90 = good; 70 - 80 = fair; 60 - 70 = poor; 50 - 60 = fail. In figure 1, the line (A) represents the ROC for an ideal diagnostic test. This curve represents a sensitivity and specificity of 100%.
+
 AUC ROC = area under the ROC curve.
 
 ![](https://github.com/theainerd/MLInterview/blob/master/images/Screenshot%20from%202018-07-09%2009-27-32.png)
