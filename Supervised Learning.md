@@ -9,11 +9,13 @@
 * [K Nearest Neighbors](#knn)
 * [Naive Bayes](#nb)
 * [Support Vector Machines](#svm)
+* [Decision Trees](#decision) 
+* [Random Forest](#rf)
 * [Bagging](#bagging)
-   * [Decision Trees](#decision)
-   * [Random Forest](#rf)
 * [Boosting](#boosting)
 * [Metrics](#metrics)
+
+
 ## What is supervised learning? <a name="supervisedlearning"> </br>
 _Supervised learning_ is where you have input data (X) and their corresponding output variables.
 ![](https://github.com/theainerd/MLInterview/blob/master/images/Screenshot%20from%202018-07-03%2019-25-29.png)
