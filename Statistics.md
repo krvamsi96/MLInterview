@@ -76,7 +76,9 @@ Types of Correlation
 * Kendall's Tau (more appropriate for discrete data.)
 
 ## What is Multicollinearity?
-   Multicollinearity occurs when two or more independent variables(also known as predictor) are highly correlated with one another in a regression model.
+  Multicollinearity occurs when two or more independent variables(also known as predictor) are highly correlated with one another in a regression model.
+
+This means that an independent variable can be predicted from another independent variable in a regression model. For Example, height, and weight, student consumption and father income, age and experience, mileage and price of a car, etc.
 
 
 
