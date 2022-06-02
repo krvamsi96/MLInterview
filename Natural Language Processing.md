@@ -40,10 +40,10 @@ Ex :RegexpTokenizer & Word Tokenize (scikit-learn)</br>
 
 The goal of both stemming and lemmatization is to reduce inflectional forms and sometimes derivationally related forms of a word to a common base form.</br>
 
-**Stemming** usually refers to a crude heuristic process that chops off the ends of words in the hope of achieving this goal correctly most of the time, and often includes the removal of derivational affixes. Different types of stemmers in NLTK are PorterStemmer, LancasterStemmer, SnowballStemmer.</br>
+**Stemming** Stemming just removes or stems the last few characters of a word, often leading to incorrect meanings and spelling. . Different types of stemmers in NLTK are PorterStemmer, LancasterStemmer, SnowballStemmer.</br>
 ![](https://github.com/theainerd/MLInterview/blob/master/images/Screenshot%20from%202018-10-04%2014-14-52.png)
 
-**Lemmatization** usually refers to doing things properly with the use of a vocabulary and morphological analysis of words, normally aiming to remove inflectional endings only and to return the base or dictionary form of a word, which is known as the lemma.</br>
+**Lemmatization** Lemmatization considers the context and converts the word to its meaningful base form, which is called Lemma. Sometimes, the same word can have multiple different Lemmas.</br>
 ![](https://github.com/theainerd/MLInterview/blob/master/images/Screenshot%20from%202018-10-04%2014-16-00.png)
 
 Note : It uses a knowledgebase called WordNet. Because of knowledge, lemmatization can even convert words which are different and cant be solved by stemmers, for example converting “came” to “come”.
