@@ -249,6 +249,9 @@ Boosting is one of the ensemble learning methods. Unlike bagging, it is not a te
 * **AdaBoost (Adaptive Boosting)**
 * **Gradient Tree Boosting**
 * **XGBoost**
+  
+  
+Gradient boosting is one of the most popular machine learning algorithms for tabular datasets. It is powerful enough to find any nonlinear relationship between your model target and features and has great usability that can deal with missing values, outliers, and high cardinality categorical values on your features without any special treatment. While you can build barebone gradient boosting trees using some popular libraries such as XGBoost or LightGBM without knowing any details of the algorithm, you still want to know how it works when you start tuning hyper-parameters, customizing the loss functions, etc., to get better quality on your model.
 
 ![](https://github.com/theainerd/MLInterview/blob/master/images/Screenshot%20from%202018-07-10%2016-29-57.png)
 
