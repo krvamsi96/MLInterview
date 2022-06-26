@@ -16,6 +16,7 @@
 * [Cross Entropy or Log Loss](#a)
 * [Explain Bias-Variance Tradeoff](#b)
 * [What is Data Wrangling?](#c)
+* [Why do you use feature selection?](#d)
 
 ## Types of Artificial Intelligence Learning Models  <a name="aimodels"> </br>
 
@@ -285,6 +286,9 @@ The **bias–variance trade-off** is the conflict in trying to simultaneously mi
 Data wrangling is the process of cleaning and unifying messy and complex data sets for easy access and analysis.
 
 With the amount of data and data sources rapidly growing and expanding, it is getting increasingly essential for large amounts of available data to be organized for analysis. This process typically includes manually converting and mapping data from one raw form into another format to allow for more convenient consumption and organization of the data.
+
+## Why do you use feature selection? <a name="d"> </br>
+Feature selection offers a simple yet effective way to overcome the challenge of high dimensional data analysis by eliminating redundant and irrelevant data. Removing the irrelevant data improves learning accuracy, reduces the computation time, and facilitates an enhanced understanding for the learning model or data.
 
 
 
