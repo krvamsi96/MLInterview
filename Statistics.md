@@ -8,7 +8,16 @@
 * [P-value](#g)
 * [A/B testing](#h)
 * [Correlation &  Multicollinearity?](#i)
+* [What is correlation and covariance in statistics?](#l)
 * [Statistical Hypothesis Tests :star::star:](#j)
+* [What are Loss Function and Cost Functions?  ](#k)
+* [How are Entropy and Gini index related?](#m)
+* [What is the difference between a univariate analysis and a bivariate analysis?](#n)
+* [What is root cause analysis?](#o)
+* [What is Chi-Square test ?[(#p)
+* [What is skewed Distribution & uniform distribution? ](#q)
+* [What is box cox transformation?](#r)
+* [VIF](#s)
 
 
 
@@ -57,9 +66,10 @@ Hypothesis testing steps:
 
 The significance level α is the probability of making the wrong decision when the null hypothesis is true. Alpha levels (sometimes just called “significance levels”) are used in hypothesis tests. Usually, these tests are run with an alpha level of .05 (5%), but other levels commonly used are .01 and .10.
 
-## P-value <a name="g"></br>
 
-A p value is used in hypothesis testing to help you support or reject the null hypothesis. The p value is the evidence against a null hypothesis. The smaller the p-value, the strong the evidence that you should reject the null hypothesis.
+## What does it mean when the p-values are high and low? <a name="g"></br>
+The p-value is a number between 0 and 1 and interpreted in the following way: A small p-value (typically ≤ 0.05) indicates strong evidence against the null hypothesis, so you reject the null hypothesis.
+A large p-value (> 0.05) indicates weak evidence against the null hypothesis, so you fail to reject the null hypothesis. p-values very close to the cutoff (0.05) are considered to be marginal (could go either way).
 
 ## A/B testing <a name="h"></br>
 
@@ -75,10 +85,10 @@ Types of Correlation
 * Spearman's Correlation (special case of Pearson ρ applied to ranked (sorted) variables. appropriate to use with both continuous and discrete data.) 
 * Kendall's Tau (more appropriate for discrete data.)
 
-## What is Multicollinearity?
-  Multicollinearity occurs when two or more independent variables(also known as predictor) are highly correlated with one another in a regression model.
+## What is multicollinearity and how to remove it?
+Multicollinearity exists when an independent variable is highly correlated with another independent variable in a multiple regression equation. This can be problematic because it undermines the statistical significance of an independent variable.
 
-This means that an independent variable can be predicted from another independent variable in a regression model. For Example, height, and weight, student consumption and father income, age and experience, mileage and price of a car, etc.
+You could use the Variance Inflation Factors (VIF) to determine if there is any multicollinearity between independent variables — a standard benchmark is that if the VIF is greater than 5 then multicollinearity exists.
 
 
 
@@ -95,22 +105,50 @@ This means that an independent variable can be predicted from another independen
    
   * **Chi-Squared Test** : Tests whether two categorical variables are related or independent.</br>
    
- ### Parametric Statistical Hypothesis Tests (Statistical tests that you can use to compare data samples.)
- 
-  * **Student’s t-test** : Tests whether the means of two independent samples are significantly different.</br>
-  
-  * **Paired Student’s t-test** : Tests whether the means of two paired samples are significantly different.</br>
-   
-  * **Analysis of Variance Test (ANOVA)** : Tests whether the means of two or more independent samples are significantly different.
-   
-  * **Repeated Measures ANOVA Test** : Tests whether the means of two or more paired samples are significantly different.
-  
-  ### Nonparametric Statistical Hypothesis Tests
-  
-   * **Mann-Whitney U Test** : Tests whether the distributions of two independent samples are equal or not.
-   * **Wilcoxon Signed-Rank Test** : Tests whether the distributions of two paired samples are equal or not.
-   * **Kruskal-Wallis H Test** : Tests whether the distributions of two or more independent samples are equal or not.
-   * **Friedman Test** : Tests whether the distributions of two or more paired samples are equal or not.
+## What are Loss Function and Cost Functions?  <a name="k"></br>
+the loss function is to capture the difference between the actual and predicted values for a single record whereas 
+cost functions aggregate the difference for the entire training dataset.
+The Most commonly used loss functions are Mean-squared error and Hinge loss.
+
+## What is correlation and covariance in statistics? <a name="l"></br>
+Correlation is defined as the measure of the relationship between two variables. If two variables are directly proportional to each other, then its positive correlation. If the variables are indirectly proportional to each other, it is known as a negative correlation. Covariance is the measure of how much two random variables vary together.
+
+## How are Entropy and Gini index related? <a name="m"></br>
+Both Entropy and Gini index are parabolic in nature when it's plotted by the probability. However the maximum value of my Gini Impurity is 0.5 while that of entropy is 1 which only occurs when my classes are Equi-probable. Both of them will tend to zero values when one of the classes are dominant.
+
+## What is the difference between a univariate analysis and a bivariate analysis? <a name="n"></br>
+The univariate analysis involves analyzing the distribution of a single variable. Bivariate analysis, on the other hand, considers the relationship between two distinct variables.
+For example, calculating the average amount of coffee consumed by a certain population would be a univariate analysis. In contrast, understanding the relationship between coffee consumption and age, gender, or time of the year would be examples of bivariate analysis.
+
+## What is root cause analysis? <a name="o"></br>
+Root cause analysis (RCA) is the process of discovering the root causes of problems in order to identify appropriate solutions. It assumes that it is much more effective to systematically prevent and solve for underlying issues rather than just treating ad hoc symptoms and putting out fires.
+
+## What is Chi-Square test ? <a name="p"></br>
+A hypothesis testing method is the Chi-square test. Checking if observed frequencies in one or more categories match expected frequencies is one of two frequent Chi-square tests. The Chi-square test is used to determine whether your data is as expected. The test's core premise is to compare the observed values in your data to the expected values that you would see if the null hypothesis is true. The Chi-square goodness of fit test and the Chi-square test of independence are two regularly used Chi-square tests. Both tests use variables to categorize your data into groups.
+
+## What is skewed Distribution & uniform distribution? <a name="q"></br>
+Uniform distribution refers to a condition when all the observations in a dataset are equally spread across the range of distribution. Skewed distribution refers to the condition when one side of the graph has more dataset in comparison to the other side.
+
+## What is box cox transformation?  <a name="r"></br>
+A Box Cox transformation is a transformation of non-normal dependent variables into a normal shape. Normality is an important assumption for many statistical techniques; if your data isn’t normal, applying a Box-Cox means that you are able to run a broader number of tests.
+
+## VIF <a name="rs"></br>
+Variance Inflation Factor (VIF) is used to detect the presence of multicollinearity. Variance inflation factors (VIF) measure how much the variance of the estimated regression coefficients are inflated as compared to when the predictor variables are not linearly related.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
