@@ -17,6 +17,11 @@
 * [Explain Bias-Variance Tradeoff](#b)
 * [What is Data Wrangling?](#c)
 * [Why do you use feature selection?](#d)
+* [Why we do feature scaling in machine learning?](#e)
+
+
+
+
 
 ## Types of Artificial Intelligence Learning Models  <a name="aimodels"> </br>
 
@@ -290,7 +295,8 @@ With the amount of data and data sources rapidly growing and expanding, it is ge
 ## Why do you use feature selection? <a name="d"> </br>
 Feature selection offers a simple yet effective way to overcome the challenge of high dimensional data analysis by eliminating redundant and irrelevant data. Removing the irrelevant data improves learning accuracy, reduces the computation time, and facilitates an enhanced understanding for the learning model or data.
 
-
+## Why we do feature scaling in machine learning? <a name="e"> </br>
+Scaling the features makes the flow of gradient descent smooth and helps algorithms quickly reach the minima of the cost function. Without scaling features, the algorithm may be biased toward the feature which has values higher in magnitude.
 
 
 
