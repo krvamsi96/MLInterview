@@ -9,7 +9,7 @@
 * [What is Bag of Words?](#h)
 * [What is tf - idf?](#i)
 * [What is word2vec ?](#k)
-* [spacy and nltk[(#l)
+* [spacy and nltk[](#l)
 
 
 ## How to clean your text data?  <a name="a"></br>
