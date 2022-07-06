@@ -117,3 +117,7 @@ or machine translation.
 
 ## Differences between NLTK and Spacy <a name="l"></br>
 NLTK and spaCy are two of the most popular Natural Language Processing (NLP) tools available in Python. You can build chatbots, automatic summarizers, and entity extraction engines with either of these libraries. While both can theoretically accomplish any NLP task, each one excels in certain scenarios.
+
+this difference, NLTK and spaCy are better suited for different types of developers. For scholars and researchers who want to build something from the ground up or provide a functioning model of their thesis, NLTK is the way to go. Its modules are easy to build on and it doesn’t really abstract away any functionality. After all, NLTK was created to support education and help students explore ideas.
+
+SpaCy, on the other hand, is the way to go for app developers. While NLTK provides access to many algorithms to get something done, spaCy provides the best way to do it. It provides the fastest and most accurate syntactic analysis of any NLP library released to date. It also offers access to larger word vectors that are easier to customize. For an app builder mindset that prioritizes getting features done, spaCy would be the better choice.
