@@ -9,6 +9,7 @@
 * [What is Bag of Words?](#h)
 * [What is tf - idf?](#i)
 * [What is word2vec ?](#k)
+* [spacy and nltk[(#l)
 
 
 ## How to clean your text data?  <a name="a"></br>
@@ -114,4 +115,5 @@ Note : Perplexity does not guarantee an (extrinsic) im-
 provement in the performance of a language processing task like speech recognition
 or machine translation.
 
-
+## Differences between NLTK and Spacy <a name="l"></br>
+NLTK and spaCy are two of the most popular Natural Language Processing (NLP) tools available in Python. You can build chatbots, automatic summarizers, and entity extraction engines with either of these libraries. While both can theoretically accomplish any NLP task, each one excels in certain scenarios.
